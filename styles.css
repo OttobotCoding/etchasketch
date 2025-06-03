@@ -1,14 +1,12 @@
 #grid-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 10px;
+    flex-direction: column;
+    border: 15px solid #33a8ff;
     width: 960px;
     height: 960px;
 }
 
-.grid-item {
+/* .grid-item {
     display: flex;
     flex-basis: calc(25% - 40px);
     background-color: #f0f0f0;
@@ -17,8 +15,18 @@
     text-align: center;
     line-height: 150px;
     flex-direction: column;
+} */
+
+.row {
+    display: flex;
+    flex: 1;
 }
 
+.col {
+    border: 1px solid black;
+    flex: 1;
+    background-color: #f0f0f0;
+}
 .button {
   border: 2px solid black;
   color: blue;
